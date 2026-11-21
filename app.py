@@ -181,7 +181,7 @@ with aba2:
 
     st.write(
         "Comparação entre as versões V1, V2  e V3 do modelo,"
-        "utilizando 100 reclamações inéditas."
+        "avaliadas em uma amostra independente."
     )
 
     comparacao = pd.read_csv(
