@@ -1,0 +1,23 @@
+# Bases de dados
+*.csv
+!comparacao_final.csv
+
+# Versões anteriores e backups locais
+versao_1/
+versao_2/
+avaliacao_final/
+
+# Arquivos temporários do Python
+__pycache__/
+*.pyc
+
+# Ambientes virtuais
+.venv/
+venv/
+
+# Configurações privadas
+.env
+.streamlit/secrets.toml
+
+# Configurações do VS Code
+.vscode/
