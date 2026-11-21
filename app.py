@@ -28,7 +28,7 @@ categorias = {
 @st.cache_resource
 def carregar_modelo():
     return joblib.load(
-        BASE / "modelo_transito_v2.joblib"
+        BASE / "modelo_transito_publico.joblib"
     )
 
 modelo = carregar_modelo()
@@ -56,7 +56,7 @@ with st.sidebar:
 
     st.write("**Modelo:** Regressão Logística")
     st.write("**Vetorização:** TF-IDF")
-    st.write("**Versão:** 2.0")
+    st.write("**Versão:** 3.0")
 
 # Cabeçalho
 st.title("🚘 Trânsito IA")
@@ -71,8 +71,8 @@ st.divider()
 # Indicadores
 col1, col2, col3, col4 = st.columns(4)
 
-col1.metric("Acurácia final", "80%", "+13 p.p.")
-col2.metric("F1-score macro", "0,7761")
+col1.metric("Acurácia final", "81%", "+14 p.p.")
+col2.metric("F1-score macro", "0,7888")
 col3.metric("Registros rotulados", "406")
 col4.metric("Categorias", "7")
 
@@ -200,10 +200,10 @@ with aba2:
         str(BASE / "grafico_comparacao_final.png")
     )
 
-    st.subheader("Matriz de confusão - Modelo V2")
+    st.subheader("Matriz de confusão - Modelo V3")
 
     st.image(
-        str(BASE / "matriz_final_V2.png")
+        str(BASE / "matriz_final_publico.png")
     )
 
     st.subheader("Principais resultados")

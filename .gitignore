@@ -21,3 +21,15 @@ venv/
 
 # Configurações do VS Code
 .vscode/
+
+# Arquivos privados e backups
+vocabulario_revisao.txt
+*_backup.joblib
+
+# Modelos antigos - uso local
+modelo_transito.joblib
+modelo_transito_v2.joblib
+
+# Relatórios de experimentos antigos
+resultados_experimentais.txt
+resultados_v2.txt
