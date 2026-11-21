@@ -179,7 +179,10 @@ with aba2:
 
     st.header("Desempenho da inteligência artificial")
 
-    st.write("Comparação entre as versões V1, V2 e V3 utilizando 100 reclamações de teste independente.")
+    st.write(
+        "Comparação entre as versões V1, V2  e V3 do modelo,"
+        "utilizando 100 reclamações inéditas."
+    )
 
     comparacao = pd.read_csv(
         BASE / "comparacao_final.csv"
